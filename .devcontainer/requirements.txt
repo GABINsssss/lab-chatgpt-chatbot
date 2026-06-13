@@ -16,7 +16,7 @@ streamlit
 gradio
 
 # 최신 기술 — LangChain / RAG / MCP (Day 3)
-# Day 3 실습(RAG·Agent)은 이 저장소의 notebooks/ 로 자체완결 진행한다.
+# Day 3 실습(RAG·Agent)은 이 저장소의 notebooks/ 로 진행한다.
 langchain
 langchain-openai
 langchain-community

@@ -1,4 +1,4 @@
-"""실습 6 Task 2 — Streamlit + RAG (자체완결).
+"""실습 6 Task 2 — Streamlit + RAG.
 
 파일 업로드 → 즉시 RAG 챗봇 생성. 업로드한 문서로만 답하는 RAG 흐름을
 이 저장소 안에서 직접 구현한다. (.md / .txt / .pdf 지원)

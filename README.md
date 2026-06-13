@@ -3,7 +3,7 @@
 자연어 처리와 ChatGPT 를 활용한 서비스 구현 — 3일 과정 실습 저장소.
 **Python·패키지 설치 없이**, VSCode Dev Container 하나로 모두 동일한 환경에서 실습합니다.
 
-> **실습 예제 정책 — 자체완결(self-contained)**
+> **실습 예제 정책 — 이 저장소에 모두 포함**
 > - 모든 실습 예제(Day 1~3)가 **이 저장소 안에** 있습니다. 외부 저장소 clone 이 필요 없습니다.
 > - Day 1(Pandas·정규식·sklearn), Day 2(OpenAI API·챗봇), Day 3(LangChain·RAG·Agent·MCP) 전부 `notebooks/` · `web/` · `mcp_demo/` 에서 진행합니다.
 > - 각 노트북은 **그대로 실행 → 변형(TODO)** 흐름으로 구성돼 있습니다.
@@ -54,7 +54,7 @@ streamlit hello                                   # http://localhost:8501 자동
 
 ## 이 저장소가 제공하는 파일
 ```
-notebooks/   실습 1~6 노트북 (전부 자체완결)
+notebooks/   실습 1~6 노트북
   01_text_cleaning.ipynb    실습 1 — 텍스트 정제 (Pandas·정규식)
   02_sentiment.ipynb        실습 2 — sklearn 감성 분류
   03_openai_llm.ipynb       실습 3 — OpenAI API · 리뷰 분류 · 비용
@@ -63,7 +63,7 @@ notebooks/   실습 1~6 노트북 (전부 자체완결)
   07_agent_tools.ipynb      실습 6-3 — Agent 도구 → MCP
 data/        make_reviews.py (실습 1·2 데이터 생성기) · sample_docs/ (RAG 샘플 문서)
 web/         streamlit_app.py (실습 5-1) · gradio_app.py (실습 5-2) · streamlit_rag.py (실습 6-2)
-mcp_demo/    library_server.py + library_client.py — 실습 6-3 (MCP 표준 체험·자체완결)
+mcp_demo/    library_server.py + library_client.py — 실습 6-3 (MCP 표준 체험)
 ```
 
 ## 실행 방법 요약
