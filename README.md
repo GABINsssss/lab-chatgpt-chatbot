@@ -16,18 +16,18 @@
   (`ms-vscode-remote.remote-containers`)
 
 ### 2. Fork 후 내 저장소에서 clone
-GitHub 에서 원본 저장소(<https://github.com/sungyong33/nlp>)를 **Fork** 한 뒤:
+GitHub 에서 원본 저장소(<https://github.com/badsaarow/lab-chatgpt-chatbot>)를 **Fork** 한 뒤:
 ```bash
 # <MY_ID> 를 본인 GitHub 계정으로 바꾸세요
-git clone https://github.com/<MY_ID>/nlp.git
-cd nlp/handson
+git clone https://github.com/<MY_ID>/lab-chatgpt-chatbot.git
+cd lab-chatgpt-chatbot
 code .
 ```
 명령 팔레트(`Ctrl+Shift+P`) → **Dev Containers: Reopen in Container**
 → 최초 1회 이미지 빌드 + 패키지 설치 + `data/reviews.csv` 생성 (수 분 소요).
 
 > 실습 산출물은 **내 Fork 에 commit / push** 하며 진행합니다.
-> 원본 변경분 동기화: `git remote add upstream https://github.com/sungyong33/nlp.git && git pull upstream main`
+> 원본 변경분 동기화: `git remote add upstream https://github.com/badsaarow/lab-chatgpt-chatbot.git && git pull upstream main`
 
 ### 3. API Key 넣기
 - 컨테이너 생성 시 `.env.example` → `.env` 가 자동 복사됩니다.
