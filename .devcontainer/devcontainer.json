@@ -22,6 +22,8 @@
         "charliermarsh.ruff",
         "shd101wyy.markdown-preview-enhanced",
         "bierner.markdown-mermaid",
+        // CSV·Parquet 등을 그리드 표로 미리보기 (행/열 지향 비교 실습용)
+        "RandomFractalsInc.vscode-data-preview",
         "GitHub.copilot",
         "GitHub.copilot-chat",
         "anthropic.claude-code",
