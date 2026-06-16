@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="ko">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>간단한 Todo 앱</title>
+  <style>
+    :root{--bg:#f6f8fb;--card:#ffffff;--muted:#6b7280;--accent:#4f46e5;--success:#10b981}
+    *{box-sizing:border-box}
+    body{font-family:Inter,system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial; background:var(--bg); margin:0;min-height:100vh;display:flex;align-items:center;justify-content:center;padding:32px}
+    .wrap{width:100%;max-width:640px}
+    .card{background:var(--card);border-radius:12px;padding:20px 20px 16px;box-shadow:0 6px 18px rgba(15,23,42,0.08)}
+    header{display:flex;align-items:center;justify-content:space-between;margin-bottom:12px}
+    h1{font-size:20px;margin:0}
+    .meta{color:var(--muted);font-size:13px}
+    form{display:flex;gap:8px;margin-bottom:12px}
+    #todo-input{flex:1;padding:12px 14px;border-radius:10px;border:1px solid #e6e9ef;font-size:14px}
+    #todo-input:focus{outline:none;box-shadow:0 0 0 4px rgba(79,70,229,0.08);border-color:var(--accent)}
+    button{background:var(--accent);color:#fff;border:none;padding:10px 14px;border-radius:10px;cursor:pointer;font-weight:600}
+    button.ghost{background:transparent;color:var(--muted);border:1px solid transparent;padding:8px 10px;font-weight:500}
+    ul{list-style:none;padding:0;margin:0;display:flex;flex-direction:column;gap:8px}
+    li{padding:12px;border-radius:10px;border:1px solid #f1f3f6;display:flex;justify-content:space-between;align-items:center}
+    .todo-text{font-size:15px;color:#0f172a}
+    .todo-text.done{color:var(--muted);text-decoration:line-through}
+    .actions{display:flex;gap:8px}
+    .actions button{background:#f3f4f6;border-radius:8px;padding:6px 8px;border:none;cursor:pointer}
+    .small{font-size:13px;padding:6px 8px}
+    .controls{display:flex;gap:8px;align-items:center}
+    .empty{color:var(--muted);text-align:center;padding:18px;font-size:14px}
+  </style>
+</head>
+<body>
+  <div class="wrap">
+    <div class="card">
+      <header>
+        <div>
+          <h1>Todo</h1>
+          <div class="meta" id="todo-meta">0개 남음</div>
+        </div>
+        <div class="controls">
+          <button id="clear-all" class="ghost small">전체 삭제</button>
+        </div>
+      </header>
+
+      <form id="todo-form">
+        <input id="todo-input" placeholder="할 일 추가... 예: 회의 준비" autocomplete="off" />
+        <button type="submit">추가</button>
+      </form>
+
+      <ul id="todo-list" aria-live="polite"></ul>
+    </div>
+  </div>
+
+  <script src="todo.js"></script>
+</body>
+</html>
